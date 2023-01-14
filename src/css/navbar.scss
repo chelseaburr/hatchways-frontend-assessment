@@ -1,38 +1,38 @@
-@import "palette";
+@import 'palette';
 
 .navbarWrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  .title {
-    color: map-get($map: $theme, $key: "primary");
-  }
-
-  .subscribeButton {
-    margin-left: 18px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 8px 13px;
-    background: map-get($map: $theme, $key: "primary");
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background 85ms ease-in-out;
 
-    &:hover {
-      background-color: black;
+    .title {
+        color: map-get($map: $theme, $key: 'primary');
     }
-  }
 
-  .icon {
-    width: 30px;
-    margin-right: 12px;
-  }
+    .subscribeButton {
+        margin-left: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 13px;
+        background: map-get($map: $theme, $key: 'primary');
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background 85ms ease-in-out;
 
-  .input {
-    padding: 0 12px;
-    width: 100%;
-  }
+        &:hover {
+            background-color: black;
+        }
+    }
+
+    .icon {
+        width: 30px;
+        margin-right: 12px;
+    }
+
+    .input {
+        padding: 0 12px;
+        width: 100%;
+    }
 }
