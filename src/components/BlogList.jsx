@@ -10,10 +10,10 @@ function BlogList() {
   const [pageSize, setPageSize] = useState(15)
 
   const currentPaginationData = useMemo(() => {
-      const startIndex = (currentPage - 1) * pageSize
-      const endIndex = startIndex + pageSize
-      return blogs.posts.slice(startIndex, endIndex)
-    }, [currentPage, pageSize]);
+    const startIndex = (currentPage - 1) * pageSize
+    const endIndex = startIndex + pageSize
+    return blogs.posts.slice(startIndex, endIndex)
+  }, [currentPage, pageSize])
 
   function updateRowsPerPage(newPageSize) {
     setPageSize(newPageSize)
