@@ -10,7 +10,7 @@ function BlogPost({ author, title, excerpt }) {
                 <div className="imageWrapper">
                     <img
                         className="authorImage"
-                        src={`https://joeschmoe.io/api/v1/${author}`}
+                        // src={`https://joeschmoe.io/api/v1/${author}`}
                         alt="Author"
                     />
                     <p variant="body">{author}</p>
