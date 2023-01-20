@@ -10,6 +10,8 @@ If the data for the posts is coming from an API instead of a JSON file, the appl
 
 Some things that would need to be considered are - When fetching data there will be a loading state and that should be displayed to the user - Handling errors that may occur when fetching data from the API - There may be a lot of data to return from the API that could impact performance. Limiting the amount of data being fetched and how many times the data is being requested would help improve the application.
 
+To limit the amount of data being fetched we would check to see if the API has a limit and offset parameter. We would then be able to directly control how much data is being requested from the API. To limit the number of requests to the API we could add a variable to the useEffect dependency array. This would depend on how often we needed to update our data. No variable would fetch the data once or it could be set to pageSize or currentPage to ensure the app has current data.
+
 ---
 
 ## Question 2
